@@ -3,7 +3,8 @@
 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       01 W-0-XHDR PIC X(10) VALUE 'SUCCESSFUL'.
+       01 W-0-XHDR.
+          05 SUCCESSFUL PIC X VALUE 'T'.  *> 'T' for TRUE, 'F' for FALSE
        01 RESULT PIC X(20).
 
        PROCEDURE DIVISION.
